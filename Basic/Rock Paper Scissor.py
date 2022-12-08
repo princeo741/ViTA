@@ -68,14 +68,15 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
             pinky_down=lmList[tipIds[4]-2][2]
             pinky_ans=pinky_up<pinky_down
 
+            task = ["Scissor","ROCK","Paper"]
             if fingers ==[0,1,1,0,0] and ct>10:
-                print ("Scissor")
+                print (task[0])
                 ct=0
             if fingers ==[0,0,0,0,0] and ct>10:
-                print ("ROCK")
+                print (task[1])
                 ct=0
             if fingers ==[1,1,1,1,1] and ct>10:
-                print ("Paper")
+                print (task[2])
                 ct=0
             ct+=1
         # Recolor Feed
