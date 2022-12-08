@@ -2,7 +2,7 @@
 import os
 import cv2
 cap=cv2.VideoCapture(0)
-directory='Image/'
+directory='Version 1.0\Images/'
 while True:
     _,frame=cap.read()
     count = {
