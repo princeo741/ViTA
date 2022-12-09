@@ -32,7 +32,7 @@ def extract_keypoints(results):
         rh = np.array([[res.x, res.y, res.z] for res in hand_landmarks.landmark]).flatten() if hand_landmarks else np.zeros(21*3)
         return(np.concatenate([rh]))
 # Path for exported data, numpy arrays
-DATA_PATH = os.path.join('MP_Data') 
+DATA_PATH = os.path.join('Version 1.0\MP_Data') 
 
 actions = np.array(['A','B','C'])
 
