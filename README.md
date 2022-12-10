@@ -18,10 +18,10 @@ The reason for creating a program like ViTA, which converts sign language into t
 ###### - This model would uses machine learning algorithms to recognize and interpret gestures and hand movements made by a sign language speaker. The model would be trained on a large dataset of sign language signs and their corresponding text translations. The model would then be able to recognize and convert sign language gestures into text in real time. The model would be relatively simple, as it would only need to recognize a limited number of gestures and hand movements. However, it would need to be highly accurate in order to effectively translate sign language into text.
 #### Version 1.0 -
 ###### Algorithm in which images are collected and used as samples to mark key points. Once the key points have been marked, a model can be trained using the marked data. This process allows the model to learn from the images and potentially make predictions or identifications based on the key points.
-######## Cons: this module is slow and produces inaccurate results.
+###### Cons: this module is slow and produces inaccurate results.
 #### Version 1.1 - 
 ###### Algorithm in which images are collected and then converted into keras files using an online program "teachablemachine" by google
-#######This allows the algorithm to access and process the images using the tools and capabilities provided by the keras framework. The use of keras can improve the efficiency and performance of the algorithm, as it offers a range of powerful tools for working with images and other data.
+###### This allows the algorithm to access and process the images using the tools and capabilities provided by the keras framework. The use of keras can improve the efficiency and performance of the algorithm, as it offers a range of powerful tools for working with images and other data.
 
 
 
