@@ -1,2 +1,3 @@
 # ViTA
- ViTA stands for Visual Translation Assistance. It's an Assistive Technology for Speech and Vision Loss aka Conversion of sign language to text/speech
+ViTA stands for Visual Translation Assistance.
+ViTA is an assistive technology that converts sign language into text, enabling people with hearing impairments to communicate more easily with individuals who do not understand sign language. By using a combination of machine learning algorithms and computer vision technology, ViTA is able to recognize and interpret a wide range of signs, providing real-time transcription on a display or other output device. This technology has the potential to greatly improve access to communication and information for individuals with hearing impairments, helping to reduce the barriers they face in daily life.
