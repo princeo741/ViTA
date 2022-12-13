@@ -4,6 +4,19 @@ from cvzone.ClassificationModule import Classifier
 import numpy as np
 import math
 
+#Voice output
+import pyttsx3
+engine = pyttsx3.init()
+
+# Set the voice to use for the conversion
+engine.setProperty('voice', 'com.apple.speech.synthesis.voice.fiona')
+
+# Set the rate at which the words will be spoken
+engine.setProperty('rate', 150)
+
+
+
+
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
 classifier = Classifier("Version 1.1\Model\keras_model.h5", "Version 1.1\Model\labels.txt")
@@ -40,6 +53,10 @@ while True:
             imgWhite[:, wGap:wCal + wGap] = imgResize
             prediction, index = classifier.getPrediction(imgWhite, draw=False)
             print(prediction, index)
+            # Convert the text to speech
+            speach_output = labels[index]
+            engine.say(speach_output)
+            engine.runAndWait()
 
         else:
             k = imgSize / w
