@@ -54,9 +54,9 @@ while True:
             prediction, index = classifier.getPrediction(imgWhite, draw=False)
             print(prediction, index)
             # Convert the text to speech
-            speach_output = labels[index]
-            engine.say(speach_output)
-            engine.runAndWait()
+            #speach_output = labels[index]
+            #engine.say(speach_output)
+            #engine.runAndWait()
 
         else:
             k = imgSize / w
