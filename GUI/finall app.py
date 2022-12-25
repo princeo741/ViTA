@@ -30,28 +30,35 @@ def run_file_3():
 def run_file_4():
     exec(open('Version 1.1/app.py').read())
 
+def run_file_5():
+    exec(open('User Guide/GIT ReadMe.py').read())
 # Create the buttons
 
 button1 = tk.Button(text="Actions", bg="beige", command=run_file_1)
 button1.configure(height=5, width=20)
-button1.pack(pady=10, padx=10)
+button1.pack(pady=5, padx=5)
 
 button2 = tk.Button(text="Rock Paper Scissor", bg="beige", command=run_file_2)
 button2.configure(height=5, width=20)
-button2.pack(pady=10, padx=10)
+button2.pack(pady=5, padx=5)
 
 button3 = tk.Button(text="Simple-Hand-Tracker", bg="beige", command=run_file_3)
 button3.configure(height=5, width=20)
-button3.pack(pady=10, padx=10)
+button3.pack(pady=5, padx=5)
 
 button4 = tk.Button(text="ASL", bg="beige", command=run_file_4)
 button4.configure(height=5, width=20)
-button4.pack(pady=10, padx=10)
+button4.pack(pady=5, padx=5)
+
+button5 = tk.Button(text="About Us", bg="beige", command=run_file_5)
+button5.configure(height=2, width=20)
+button5.pack(pady=5, padx=5)
 
 # Pack the buttons into the window
 button1.pack()
 button2.pack()
 button3.pack()
+button4.pack()
 button4.pack()
 # Run the main loop
 window.mainloop()
