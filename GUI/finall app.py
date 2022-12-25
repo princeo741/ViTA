@@ -1,7 +1,5 @@
 import tkinter as tk
-# Import the PhotoImage class from the tkinter module
-from tkinter import PhotoImage
-
+from tkinter import PhotoImage # Import the PhotoImage class from the tkinter module
 import os
 
 
@@ -11,14 +9,10 @@ window.title("ViTA")
 window.geometry("450x450")
 window.config(bg="white")
 
-# Load the image file
-image = PhotoImage(file="GUI/LOGO.png")
-# Resize the image while preserving the aspect ratio
-image = image.subsample(2, 2)
-# Create an image label widget
-label = tk.Label(image=image)
-# Pack the image label widget to the left of the parent widget
-label.pack(side="left")
+image = PhotoImage(file="GUI/LOGO.png") # Load the image file
+image = image.subsample(2, 2) # Resize the image while preserving the aspect ratio
+label = tk.Label(image=image) # Create an image label widget
+label.pack(side="left") # Pack the image label widget to the left of the parent widget
 
 # Create a button widget
 button = tk.Button(window, image=image, bg="white")
