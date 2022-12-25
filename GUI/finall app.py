@@ -6,11 +6,11 @@ import os
 # Create the main window
 window = tk.Tk()
 window.title("ViTA")
-window.geometry("450x450")
+window.geometry("600x450")
 window.config(bg="white")
 
 image = PhotoImage(file="GUI/LOGO.png") # Load the image file
-image = image.subsample(2, 2) # Resize the image while preserving the aspect ratio
+image = image.subsample(1, 1) # Resize the image while preserving the aspect ratio
 label = tk.Label(image=image) # Create an image label widget
 label.pack(side="left") # Pack the image label widget to the left of the parent widget
 
