@@ -22,7 +22,6 @@ label.pack(side="left")
 
 # Create a button widget
 button = tk.Button(window, image=image, bg="white")
-#button.pack()
 
 # Define a function for each button that runs the corresponding Python file
 def run_file_1():
