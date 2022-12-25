@@ -79,4 +79,9 @@ while True:
 
     cv2.imshow("Image", imgOutput)
     cv2.waitKey(1)
+     #Below states that if the |q| is press on the keyboard it will stop the system
+    key = cv2.waitKey(1) & 0xFF
+    if key == ord("q"):
+        break
+
     
