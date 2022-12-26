@@ -34,31 +34,31 @@ def run_file_5():
     exec(open('User Guide/GIT ReadMe.py').read())
 # Create the buttons
 
-button1 = tk.Button(text="Actions", bg="beige", command=run_file_1)
+button1 = tk.Button(text="Actions", bg="beige", activebackground="light blue", command=run_file_1)
 button1.configure(height=5, width=20)
 button1.pack(pady=5, padx=5)
 button1.config(font=("Playfair", 8, "bold"))
 button1.config(borderwidth=2, relief="groove")
 
-button2 = tk.Button(text="Rock Paper Scissor", bg="beige", command=run_file_2)
+button2 = tk.Button(text="Rock Paper Scissor", bg="beige", activebackground="light blue", command=run_file_2)
 button2.configure(height=5, width=20)
 button2.pack(pady=5, padx=5)
 button2.config(font=("Playfair", 8, "bold"))
 button2.config(borderwidth=2, relief="groove")
 
-button3 = tk.Button(text="Simple-Hand-Tracker", bg="beige", command=run_file_3)
+button3 = tk.Button(text="Simple-Hand-Tracker", bg="beige", activebackground="light blue", command=run_file_3)
 button3.configure(height=5, width=20)
 button3.pack(pady=5, padx=5)
 button3.config(font=("Playfair", 8, "bold"))
 button3.config(borderwidth=2, relief="groove")
 
-button4 = tk.Button(text="ASL", bg="beige", command=run_file_4)
+button4 = tk.Button(text="ASL", bg="beige", activebackground="light blue", command=run_file_4)
 button4.configure(height=5, width=20)
 button4.pack(pady=5, padx=5)
 button4.config(font=("Playfair", 8, "bold"))
 button4.config(borderwidth=2, relief="groove")
 
-button5 = tk.Button(text="About Us", bg="beige", command=run_file_5)
+button5 = tk.Button(text="About Us", bg="beige", activebackground="light blue", command=run_file_5)
 button5.configure(height=2, width=20)
 button5.pack(pady=5, padx=5)
 button5.config(font=("Playfair", 8, "bold", "italic"))
