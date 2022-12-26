@@ -1,12 +1,12 @@
 import tkinter as tk
 from tkinter import PhotoImage # Import the PhotoImage class from the tkinter module
 import os
-
+import time
 
 # Create the main window
 window = tk.Tk()
 window.title("ViTA")
-window.geometry("600x410")
+window.geometry("600x455")
 window.config(bg="white")
 
 image = PhotoImage(file="GUI/LOGO.png") # Load the image file
@@ -14,8 +14,21 @@ image = image.subsample(1, 1) # Resize the image while preserving the aspect rat
 label = tk.Label(image=image) # Create an image label widget
 label.pack(side="left") # Pack the image label widget to the left of the parent widget
 
+# Create a label widget to display the time
+time_label = tk.Label(window, text="", font=("Arial", 18, "bold"))
+time_label.pack()
+
+
 # Create a button widget
 button = tk.Button(window, image=image, bg="white")
+
+# Update the time label every second
+def update_time():
+    current_time = time.strftime("%I:%M:%S %p")  # Get the current time in hh:mm:ss AM/PM format
+    time_label.configure(text=current_time)
+    window.after(1000, update_time)  # Run this function again after 1000 milliseconds (1 second)
+
+update_time()  # Initialize the time label
 
 # Define a function for each button that runs the corresponding Python file
 def run_file_1():

@@ -8,7 +8,7 @@ window.geometry("200x50")
 window.config(bg="white")
 
 # Create a label widget to display the time
-time_label = tk.Label(window, text="", font=("Helvetica", 18, "bold"))
+time_label = tk.Label(window, text="", font=("Arial", 18, "bold"))
 time_label.pack()
 
 # Update the time label every second
