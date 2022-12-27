@@ -109,6 +109,16 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
                 # Start the speech engine
                 engine.runAndWait()
                 ct=0
+            if fingers ==[1,1,1,1,1] and ct>10:
+                print ("Thank you")
+                # Set the text that you want to speak
+                text = "Thank you"
+                # Speak the text
+                engine.say(text)
+                # Start the speech engine
+                engine.runAndWait()
+                ct=0
+
             ct+=1
         # Recolor Feed
         image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
