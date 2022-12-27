@@ -3,6 +3,11 @@ import cv2
 import numpy as np
 import HandTrackingModule as htm
 
+import pyttsx3
+
+# Initialize the text-to-speech engine
+engine = pyttsx3.init()
+
 
 mp_drawing = mp.solutions.drawing_utils
 mp_holistic = mp.solutions.holistic
@@ -70,15 +75,39 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
 
             if fingers ==[0,1,1,0,0] and ct>10:
                 print ("Peace")
+                # Set the text that you want to speak
+                text = "Peace"
+                # Speak the text
+                engine.say(text)
+                # Start the speech engine
+                engine.runAndWait()
                 ct=0
             if fingers ==[0,1,0,0,1] and ct>10:
                 print ("ROCK ON!")
+                # Set the text that you want to speak
+                text = "ROCK ON!"
+                # Speak the text
+                engine.say(text)
+                # Start the speech engine
+                engine.runAndWait()
                 ct=0
             if fingers ==[1,0,0,0,1] and ct>10:
                 print ("Call Me")
+                # Set the text that you want to speak
+                text = "Call Me"
+                # Speak the text
+                engine.say(text)
+                # Start the speech engine
+                engine.runAndWait()
                 ct=0
             if fingers ==[1,1,0,0,1] and ct>10:
                 print ("I LOVE YOU")
+                # Set the text that you want to speak
+                text = "I LOVE YOU"
+                # Speak the text
+                engine.say(text)
+                # Start the speech engine
+                engine.runAndWait()
                 ct=0
             ct+=1
         # Recolor Feed
